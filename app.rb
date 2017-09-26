@@ -17,7 +17,7 @@ end
 
 put '/todos/:id' do
 	id = params[:id].to_i
-	update = params[:update]
+	update = params['update']
 	ToDoManager.update(id, update)
 end
 
